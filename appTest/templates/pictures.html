@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block pageBody %}
+  
+      {% for row in rows %}
+			<div class="item">
+				<div class= "uppart">
+					
+						<div class="layer">
+						  <div class="picCont">
+							<a href="{{url_for('file', path=row.path ,filename=row.filename)}}"><img class="pict" src="{{url_for('files', path= row.path, filename= row.filename )}}" alt="{{ row.filename}}" title="{{row.comment}}" /></a>
+						  </div>
+						</div>
+					
+				</div>
+				<div class="bottpart">
+					<div class="comment">
+						<span>{{row.shortcomm}}</span>
+					</div>
+				</div>
+			</div>
+	  {% endfor %}
+ 
+{% endblock %}

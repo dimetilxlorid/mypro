@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"/>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='css/style.css') }}"/> 
+	<script src="{{url_for('static',filename='js/jquery-3.3.1.js') }}"></script>
+	<script src="{{url_for('static',filename='js/main.js') }}"></script>
+</head>
+<body>
+	<div class = "page">
+		<div class="canvass">
+			 <div class = "pageHeader">
+				 <h1>{{ header }}</h1>
+				  <!--<div class= "navigation">
+						<a href="{{ url_for('index') }}">home</a>
+						<a href="{{ url_for('pictures') }}">pictures</a>
+				  </div>-->
+			 </div>
+			 
+			<div class="pageBody">
+				 <div class= "leftpanel">
+					<div class="nav">
+						<div class="menuitem"><div class="micont"><div class="milay"><a href="{{ url_for('upload') }}"><div class="target"><div class="ref"><p>Загрузить</p></div></div></a></div></div></div>
+						<div class="menuitem"><div class="micont"><div class="milay"><a href="{{ url_for('pictures') }}"><div class="target"></div><div class="ref"><p>Галерея</p></div></div></a></div></div></div>
+						<!--<div class="menuitem"><div class="micont"><div class="milay"><a href=""><div class="target"><div class="ref">?</div></div></a></div></div></div>-->
+					</div>
+				 <div class="mainpanel">
+					{% block pageBody %}
+					{% endblock %} 
+				 </div>
+			 </div>
+			 <div class = "pageFooter">
+			 {% for message in get_flashed_messages()%}
+			   <div class="flashMessage"> {{message}} </div>
+			 {% endfor%}
+			 <div class ="footer"><p>2018</p></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

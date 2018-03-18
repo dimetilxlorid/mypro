@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"/>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='css/style.css') }}"/> 
+	<script src="{{url_for('static',filename='js/jquery-3.3.1.js') }}"></script>
+	<script src="{{url_for('static',filename='js/main.js') }}"></script>
+</head>
+<body>
+	<div class = "blayer"></div>
+	<div class = "opCont">
+		<div class="onepic"><img class="onepic" src="{{url_for('files',path= path,filename= filename)}}"> </div>
+	</div>
+</body>
+</html>

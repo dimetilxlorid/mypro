@@ -1,0 +1,286 @@
+body{
+
+}
+a{	
+	text-decoration:none;
+}
+h1{
+	/*border: 1px solid red;*/
+	margin:auto;
+}
+p{
+	margin:auto;
+	vertical-align: middle;
+	/*border: 1px solid white;*/
+}
+table{
+    border-spacing: 10px;
+	text-align:center;
+	top:200px;
+    left:50%;
+	position:relative;
+	/*width:600px;*/
+	margin-left:-300px;
+	/*border:1px solid blue;*/
+}
+ul{
+}
+li{
+}
+td{
+	/*border: 1px solid yellow;*/
+}
+img.pict {
+	border-radius:5px;
+	height:100px;
+	margin:auto;
+}
+img.onepic{
+	position:relative;
+	height:100%;
+}
+td.left{
+	font-weight:bold;
+	text-align:right;
+}
+td.right{
+	text-align: left;
+}
+td.note{
+	text-align:left;
+	font-weight:bold;
+	width:260px;
+	color:red;
+	font-style:italic;
+}
+div.blayer{
+	width:100%;
+	height:98%;
+	position:absolute;
+	background:black;
+	opacity:0.8;
+}
+div.opCont{
+	position:absolute;
+	display:flex;
+	width:100%;
+	height:98%;
+	/*border:1px solid yellow;*/
+}
+div.onepic{
+	text-align:center;
+	margin:auto;
+	/*border: 1px solid red;*/
+	position:relative;
+	height:98%;
+
+}
+div.canvass{
+	position:relative;
+	height:100%;
+	width:100%;
+	/*border :1px solid blue; */
+	}
+div.layer:hover{
+	 bottom: 7px;
+}
+div.leftpanel{
+	float:left;
+	width: 19%;
+	height:100%;
+	/*border :1px solid blue; */
+	border-radius:7px;
+	/*background:grey;*/
+	background-color:#AAD8F4;	
+}
+div.mainpanel{
+	position:relative;
+	float:right;
+	width:80%;
+	Height:100%;
+	/*border :1px solid blue; */
+	border-radius:7px;
+	overflow-y:auto;
+	background-color:#AAD8F4;	
+}
+div.target{
+	position:absolute;
+	height:100%;
+	width:100%;
+	/*border:1px solid red;*/
+}
+div.ref{
+	color: black;
+	font-weight:bold;
+	font-size:25px;
+	display:flex;
+	height:100%;
+	position:absolute;
+	/*border:1px solid blue;*/
+	left:40px;
+}
+div.nav{
+		
+	position: relative;
+	border-radius:7px;
+	width: 100%;
+	height:100%;
+	#border :1px solid blue;
+	border-radius:7px;
+	/*background:grey;*/
+
+}
+div.menuitem{
+	display:flex;
+	margin-top:10px;
+	position:relative;
+	width:100%;
+	height:50px;
+	position:relative;
+	/*border :1px solid red;*/
+}
+div.micont{
+	position:relative;
+	margin:auto;
+	width:80%;
+	height:100%;
+	#border :1px solid yellow;
+	background-color:yellow;
+	border-radius:7px;	
+}
+div.milay:Hover{
+	left:12px;
+}
+div.milay{
+	margin:auto;
+	position: absolute;
+	width:100%;
+	height:100%; 	
+	border-radius:7px;	
+	#border :2px solid black ;
+	background-color:#5988A5;
+}
+
+div.item{
+	position:relative;
+	float:left;
+	height:180px;
+	margin-top:20px;
+	margin-left:30px;
+	text-align:center;
+	width:120px;
+	height:160px;
+	float:left;
+	font-weight: bold;
+	/*border :1px solid blue; */
+	border-radius: 7px;
+}
+div.uppart{
+	position:absolute;
+	width:100%;
+	height:70%;
+	/*border :1px solid white; */
+	background-color: yellow;
+	border-radius:7px;
+}
+div.bottpart{
+	display:flex;
+	position:absolute;
+	width:100%;
+	height:25%;
+	bottom:0px;
+	overflow:hidden;
+}
+div.comment{
+	position:relative;
+	margin: auto ;
+	/*width:100%;
+	height:100%;*/
+	font-size:small; 
+	font-weight: bold;
+	line-height:12px;
+	/*border:1px solid yellow;*/
+	overflow-y: auto;
+	/*background-color: white;*/
+	overflow-y:hidden;
+	bottom:0px;
+}
+div.layer{
+	display:flex;
+	width:100%;
+	position:absolute;
+	height:100%;
+	/*border :1px solid white; */
+	background-color:grey;
+	border-radius:7px;
+	#overflow:hidden;
+}
+
+div.picCont{
+	
+	height:100px;
+	position:relative;
+	margin:auto ;
+	width: 100px;
+	/*background-color: white;*/
+	border-radius:5px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+
+
+div.page{
+	position:relative;
+	width:1200px;
+	height:750px;
+	/*height:100%;*/
+	left: 50%;
+	margin-left: -600px;
+	/*border:1px solid yellow;*/
+}
+div.pageHeader{
+	display:flex;
+	height:10%;
+	width:100%;
+	vertical-align:middle;
+	text-align: center;
+	background-color:#5988A5;
+	border-radius:7px;
+	/*border:1px solid yellow;*/
+}
+div.pageBody{
+
+	margin-top:10px;
+	width:100%;
+	height:100%;
+	/*background-color:#AAD8F4;	*/
+	border-radius: 7px;
+	/*border:1px solid yellow;*/
+}
+div.footer{
+	display:flex;
+	font-weight:bold;
+	color: white;
+	/*float:right;*/
+	height: 100%;
+	position:relative;
+	/*border:1px solid yellow;*/
+	bottom:0px;
+	text-align:right;
+}
+div.pageFooter{
+	margin-top:10px;
+	height:10%;
+	background-color:#5988A5;
+	border-radius:7px;
+	bottom:0px;
+	/*border:1px solid yellow;*/
+}
+
+input[name=picFile]{
+	width:250px;
+}
+input[name=comment]{
+	width:250px;
+}

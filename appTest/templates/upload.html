@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block pageBody %}
+   
+    <div id="uploadFormContainer">
+		<form method="POST" enctype="multipart/form-data" action= "{{ url_for('uploading') }}">
+		  <table>
+		     {{form.hidden_tag()}}
+			 <!--<tr> <td colspan=2 >{{form.hidden_tag()}}</td></tr>-->
+			 <tr> <td class="left">Файл</td ><td> {{form.picFile}}    </td><td class="note">{% for error in   form.errors.picFile %}<span>{{error}}</span>{% endfor %}</td></tr>
+			 <tr><td class="left">Комментарий</td><td class="right">{{form.comment(size=300)}}  </td><td class="note">{% for error in   form.errors.comment %}<span>{{error}}</span>{% endfor %} </td> </tr>
+			 <tr> <td></td><td class='right'><input type="submit" value= "загрузить"/></td><td class="note"></td> </tr>
+		 </table>
+		</form>
+	</div>
+
+{% endblock %}
+
+
+
